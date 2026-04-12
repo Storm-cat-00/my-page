@@ -23,7 +23,7 @@
     width: 300px;
     display: block;
     margin: 10px 0;
-    border-radius: 50px;
+    border-radius: 150px;
   }
   
   footer {
@@ -56,35 +56,19 @@
 <body>
 
  <header>
-  <h1>My page</h1>
+  <h1>Storm-catの遊び場</h1>
  </header>
 
  <main>
-  <h2>Welcome to my page!</h2>
-  <p>HTML実験場だよ</p>
-  <img src="image1.png" width="300" alt="ハルウララ（ウマ娘）">
-  <h2>URL表示</h2>
-  <a href="https://google.com" target="_blank">googleのURL</a>
-  <a href="https://youtube.com" target="_blank">YoutubeのURL</a>
-  <a href="https://nicovideo.jp" target="_blank">ニコ動のURL</a>
-  <h2>日時表示(日本時間)</h2>
-  <p id="time"></p>
+  <h2>Welcome to my website!</h2>
+  <p>このサイトはゆるく作って、ゆるく試す場所だよ</p>
+  <h2>自己紹介</h2>
+  <p>自分はStorm-cat、またはcat_00って名前で活動してる人で、HTML,CSS,JSを学んでる学生です、よろしく。</p>
  </main>
 
  <footer>
-  <p>※これはテスト用HTMLです</p>
+  <p>@ Storm-cat</p>
  </footer>
-
-  <script>
-   function updateTime() {
-    const now = new Date();
-    const text = now.toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' });
-    document.getElementById("time").textContent = text;
-   }
- 
-   setInterval(updateTime, 1000);
-   updateTime();
-  </script>
 
 </body>
 
