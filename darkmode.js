@@ -1,12 +1,12 @@
 const button = document.getElementById('modechange');
 
 if (localStorage.getItem('theme') === 'dark') {
-  document.body.classList.add('dark-mode');
+  document.documentElement.classList.add('dark-mode');
 }
 
 button.addEventListener('click', () => {
 
-  document.body.classList.toggle('dark-mode');
+  document.documentElement.classList.toggle('dark-mode');
 
   if (document.body.classList.contains('dark-mode')) {
     localStorage.setItem('theme', 'dark');
